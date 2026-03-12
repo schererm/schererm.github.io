@@ -21,9 +21,17 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="https://formspree.io/f/mlgpbvow">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
+			<form id="signup-form" action="https://formspree.io/f/mlgpbvow" method="POST">
+				<label>
+					Your email:
+					<input type="email" name="email" id="email" placeholder="Email Address">
+				</label>
+				<label>
+					Your message:
+					<textarea name="message"></textarea>
+				</label>
+				<!-- your other form fields go here -->
+				<button type="submit">Send</button>
 			</form>
 
 		<!-- Footer -->
