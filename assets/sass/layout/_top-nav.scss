@@ -1,0 +1,54 @@
+///
+/// Eventually by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Top Nav */
+
+	#top-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: _palette(bg);
+		z-index: 1000;
+		padding: 1em 2em;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			gap: 2em;
+		}
+
+		li {
+			display: inline;
+		}
+
+		a {
+			color: _palette(fg);
+			text-decoration: none;
+			font-weight: 700;
+			transition: color 0.3s;
+
+			&:hover {
+				color: _palette(accent, bg);
+			}
+		}
+
+		@include breakpoint('<=small') {
+			padding: 0.5em 1em;
+
+			ul {
+				gap: 1em;
+			}
+
+			a {
+				font-size: 0.9em;
+			}
+		}
+	}
